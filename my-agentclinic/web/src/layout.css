@@ -1,0 +1,12 @@
+/* Layout styles for Header / Main / Footer */
+:root { --accent: #0b7; --muted: #f3f3f3 }
+.app-layout { display: flex; flex-direction: column; min-height: 100vh }
+.site-header { background: linear-gradient(90deg,#0b7 0%, #06a 100%); color: white }
+.site-header .container { display:flex; align-items:center; justify-content:space-between; padding:12px 0 }
+.site-header h1 { margin:0; font-size:1.25rem }
+.site-header nav a { color: rgba(255,255,255,0.95); text-decoration:none; margin-left:12px }
+.site-main { flex:1; padding:28px 0 }
+.site-footer { background: var(--muted); padding:12px 0; text-align:center; font-size:0.9rem }
+
+/* Keep the existing container sizing consistent with styles.css */
+.container { max-width: 800px; margin: 0 auto; padding: 0 16px }
