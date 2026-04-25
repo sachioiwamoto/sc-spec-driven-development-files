@@ -25,3 +25,6 @@
    - Add logging/monitoring, deploy to a Node host or container registry
 
 Each phase is intentionally small so students can iterate and learn.
+
+--
+Status: Phase 1 — MVP API + DB — COMPLETE

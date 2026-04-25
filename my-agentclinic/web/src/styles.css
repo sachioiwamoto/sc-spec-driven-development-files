@@ -1,0 +1,5 @@
+body { font-family: Inter, system-ui, Arial, sans-serif; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto }
+label { display:block; margin:8px 0 }
+input, select { display:block; padding:6px; margin-top:4px }
+button { margin-top:8px }
