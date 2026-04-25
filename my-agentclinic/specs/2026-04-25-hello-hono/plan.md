@@ -19,10 +19,14 @@
    - Create a simple AgentClinic landing page summarizing the mission and target audiences
    - Include a clear call-to-action linking to the dev demo UI and docs (e.g., "Try the demo")
    - Lightweight responsive layout with basic styles to satisfy marketing needs
+   - Implement a reusable `Layout` component (Header / Main / Footer)
+    - Create subcomponents, each in their own file under `web/src/components`: `Header.tsx`, `Main.tsx`, `Footer.tsx`
+    - Add a dedicated `layout.css`, import it in the layout component, and link it in the demo `index.html`
 
 5. Minimal UI + integration
    - Add a small React + Vite page to list agents and create appointments (dev-only)
    - Wire UI to API endpoints (fetch + form)
+   - Use the `Layout` component to provide consistent header/footer around the demo UI
 
 6. Tests & CI
    - Unit tests for services (Jest)
