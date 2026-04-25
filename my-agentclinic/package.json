@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn src/server.ts",
+    "changelog:update": "node scripts/update-changelog.js",
     "build": "tsc",
     "start": "node dist/server.js",
     "prepare": "prisma generate",
