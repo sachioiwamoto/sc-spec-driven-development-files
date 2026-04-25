@@ -3,10 +3,14 @@
 Scope
 - Implement the backend API and database schema for agents and appointments required for Phase 1 (MVP API + DB) of the roadmap.
 
+- Implement a minimal AgentClinic home page (landing page) that summarizes the mission and links to the dev demo UI and documentation.
+
 Decisions
 - Framework: NestJS (per `specs/tech-stack.md`) for a TypeScript-first server structure.
 - Database: SQLite with Prisma as the ORM/tooling.
 - Keep UI minimal and focused on demonstrating API usage for students and demos.
+
+- Frontend for demos and home page: React + Vite (keeps tooling simple for students and aligns with `specs/tech-stack.md`).
 
 Context & constraints
 - Aligns with `specs/mission.md` to support course students and demo developers.

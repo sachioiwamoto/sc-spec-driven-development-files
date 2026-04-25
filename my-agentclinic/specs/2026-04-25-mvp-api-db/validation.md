@@ -7,6 +7,8 @@ Acceptance criteria
 - Tests: Unit tests pass locally; Playwright smoke test completes successfully in CI.
 - Docs: README updated with run, migrate, and seed instructions.
 
+- Home page: the root landing page (`/`) renders mission text and a link/button to the dev demo UI; it loads without console errors in a modern browser.
+
 Manual validation steps
 1. Install dependencies and generate Prisma client:
    - `npm install`
@@ -18,6 +20,8 @@ Manual validation steps
 4. Verify endpoints:
    - `curl -s http://localhost:3000/agents | jq .` should return a JSON array
    - `curl -X POST http://localhost:3000/appointments -H 'Content-Type: application/json' -d '{"agentId":"<id>","therapyId":"<id>","scheduledAt":"2026-05-01T10:00:00Z"}'`
+6. Open the home page:
+   - Visit `http://localhost:3000/` and confirm mission text is visible and the "Try the demo" link/button navigates to the dev UI.
 5. Open the dev UI and confirm the list and create flows work.
 
 CI validation
